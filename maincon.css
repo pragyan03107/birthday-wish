@@ -1,0 +1,97 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  .gift-box{
+    display: block;
+  }
+  .bday-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .rotate{
+    animation-name: Rotate;
+    animation-duration: 1s;
+    /* animation-iteration-count: 3; */
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes Rotate {
+    0% {
+        transform: rotate3d(0,0,0,0deg);
+    }
+    100% {
+        transform: rotate3d(0,1,1,360deg);
+    }
+
+  }
+  
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.container {
+  margin: auto;
+  width: 400px;
+}
+
+.path--background {
+  fill: rgb(34, 213, 201);
+  stroke: #fff;
+  stroke-width: 0px;
+}
+
+.pulse {
+  fill: rgb(255, 74, 74) !important;
+}
+
+.path--foreground {
+  fill: #eee;
+  stroke: #eee;
+  stroke-width: 2px;
+}
+
+.label {
+  font: 90px "Open Sans";
+  font-weight: 900;
+  text-anchor: middle;
+  fill: rgb(34, 213, 201);
+}
+#ppimg{
+  width: 50px;
+}
+#btn{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 10px;
+}
+
+#button{
+  
+  border-radius: 50%;
+  padding: 10px;
+  padding-left: 15px;
+  display: block;
+  background-color: white;
+  padding-right: 15px;
+  box-shadow: 1px 1px 30px rgb(179, 0, 30);
+  border: none;
+  margin-bottom: 10px;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='34' height='41' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='50%'>👆</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+#instruction1{
+  font-size: 10px;
+  color: red;
+}
